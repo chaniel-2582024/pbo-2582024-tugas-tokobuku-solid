@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class Tunai implements MetodeBayar {
+    @Override
+    public String nama() {
+        return "Tunai";
+    }
 
-public class Tunai {
+    @Override
+    public int totalBayar(int totalBelanja) {
+        return totalBelanja;
+    }
 }

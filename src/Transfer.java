@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class Transfer implements MetodeBayar {
+    @Override
+    public String nama() {
+        return "Transfer (+Rp2.500)";
+    }
 
-public class Transfer {
+    @Override
+    public int totalBayar(int totalBelanja) {
+        return totalBelanja + 2500;
+    }
 }
